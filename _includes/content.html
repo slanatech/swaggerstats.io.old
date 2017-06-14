@@ -1,0 +1,13 @@
+
+{% if layout.nocontainer %}
+<div class="page-content {{ layout.extracontentclass | escape }}">
+{% else %}
+<div class="container-fluid page-content {{ layout.extracontentclass | escape }}">
+{% endif %}
+
+    {% if page.header %}
+        <div class="page-header"><h1>{{ page.header | escape }}</h1></div>
+    {% endif %}
+    {{ content }}
+</div>
+

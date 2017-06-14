@@ -1,0 +1,294 @@
+<section class="container features">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <p class="sws-title-main">Insights into your APIs</p>
+      <p class="sws-subtitle-main">Monitor REST API performance, health and usage statistics in node express apps</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 text-center wow fadeInLeft">
+      <div>
+        <img src="img/swaggerLogo360.png" alt="swagger" class="sws-swagger-logo">
+        <h2>Swagger</h2>
+        <p class="sws-highlight">Monitor API requests and responses and collects statistics. With <a href="http://swagger.io" target="_blank">Swagger specification</a> provided, monitor API Operations defined in the spec</p>
+      </div>
+      <div>
+        <i class="fa fa-gear"></i>
+        <h2>Express</h2>
+        <p class="sws-highlight">Monitor API Operations detected on the fly based on Node.js Express routes</p>
+      </div>
+    </div>
+    <div class="col-md-6 text-center  wow zoomIn">
+      <div class="sws-logo sws-logo-landing">{<i class="fa fa-signal"></i>}</div>
+      <div class="sws-logo-text">swagger-stats</div>
+    </div>
+    <div class="col-md-3 text-center wow fadeInRight">
+      <div>
+        <i class="fa fa-code"></i>
+        <h2>API</h2>
+        <p class="sws-highlight">Get statistics on requests and responses, errors, processing time, content length, rates - per method, per API Operation, over time </p>
+      </div>
+      <div>
+        <i class="fa fa-desktop"></i>
+        <h2>UI</h2>
+        <p class="sws-highlight">Comes with built-in User Interface. Open /swagger-stats/ui to start monitoring right away</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <p class="separator-dots"></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1>Install & Enable</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+{% highlight shell %}npm install swagger-stats --save{% endhighlight %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+{% highlight javascript %}var swStats = require('swagger-stats');
+var apiSpec = require('swagger.json');
+app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <!--<a href="" class="btn btn-primary">Learn more</a>-->
+    </div>
+  </div>
+
+<!--
+  <div class="row features-block">
+    <div class="col-lg-6 features-text wow fadeInLeft">
+      <h2>Install</h2>
+{% highlight shell %}npm install swagger-stats --save{% endhighlight %}
+      <a href="" class="btn btn-primary">Learn more</a>
+    </div>
+    <div class="col-lg-6 text-right wow fadeInRight">
+      <h2>Enable</h2>
+      <div style="text-align: left">
+{% highlight javascript %}var swStats = require('swagger-stats');
+var apiSpec = require('swagger.json');
+app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
+      </div>
+      <a href="" class="btn btn-primary">Learn more</a>
+    </div>
+  </div>
+-->
+
+</section>
+
+
+<section class="sws-landing-ui">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <p class="separator-dots"></p>
+          </div>
+      </div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>Monitor</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1 features-text">
+        <h2>Summary</h2>
+        <i class="fa fa-line-chart big-icon pull-right"></i>
+        <p>At a glance Summary view gives you key metrics on requests, errors, rates, and handling time. Timeline shows volumes of requests and responses by class per minute over last 60 minutes so you can quickly spot trends</p>
+      </div>
+      <div class="col-lg-5 features-text">
+        <h2>Rates & Durations</h2>
+        <i class="fa fa-clock-o big-icon pull-right"></i>
+        <p>Requests and Errors rates, Maximum, Average and Total Handle Time. Current values are calculated for the last minute, and Overall values - for entire run time. Trend of requests and errors rates per minute over last 60 minutes</p>
+      </div>
+    </div>
+    <div class="row margin30">
+      <div class="col-lg-8 col-lg-offset-2">
+        <a href="img/summ_widgets.png" data-lightbox="sws-img-land-widgets"><img src="img/summ_widgets.png" alt="widgets" class="img-responsive pull-right"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1 features-text">
+        <h2>Requests</h2>
+        <i class="fa fa-exchange big-icon pull-right"></i>
+        <p>Stats by Request Method. See request and error volumes, rates, errors by class, handle time and payload sizes per GET, POST, PUT, DELETE ... </p>
+      </div>
+      <div class="col-lg-5 features-text">
+        <h2>Payload</h2>
+        <i class="fa fa-file-text big-icon pull-right"></i>
+        <p>Stats and Trends of API requests payload (content length) received in requests and sent in responses</p>
+      </div>
+    </div>
+    <div class="row margin30">
+      <div class="col-lg-8 col-lg-offset-2">
+        <a href="img/rates.png" data-lightbox="sws-img-land-rates"><img src="img/rates.png" alt="widgets" class="img-responsive pull-right"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1 features-text">
+        <h2>API Calls</h2>
+        <i class="fa fa-code big-icon pull-right"></i>
+        <p>API Operation statistics. For each Path and Method shows metrics on requests and errors volumes, rates, handle time, payload. Shows API Operation from Swagger spec, including description and tags, so you can quickly find specific operation. API Operations based on express routes will be added to the list on the fly as they are invoked.</p>
+      </div>
+      <div class="col-lg-5 features-text">
+        <h2>Errors</h2>
+        <i class="fa fa-exclamation-circle big-icon pull-right"></i>
+        <p>Counts of Errors responses by status code. "404 Not Found" path counts: see what path was requested and not found most of the times. "500 Internal Server Error" path counts: see what path produced most Internal Server errors</p>
+      </div>
+    </div>
+    <div class="row margin30">
+      <div class="col-lg-8 col-lg-offset-2">
+        <a href="img/apitable.png" data-lightbox="sws-img-land-rates"><img src="img/apitable.png" alt="widgets" class="img-responsive pull-right"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1 features-text">
+        <h2>API Operation</h2>
+        <i class="fa fa-asterisk big-icon pull-right"></i>
+        <p>Details about individual API operations. Key metrics summary, list of parameters from Swagger spec and stas of parameters usage: number of time parameter was passed, number of time mandatory parameter was missing</p>
+      </div>
+      <div class="col-lg-5 features-text">
+        <h2>Last Errors</h2>
+        <i class="fa fa-exclamation big-icon pull-right"></i>
+        <p>Last 100 Errors. Request and Response details on last 100 time error response was sent - method, URLs, parameters, request and response headers, addresses, start/stop times and processing duration, matched API Operation info</p>
+      </div>
+    </div>
+    <div class="row margin30">
+      <div class="col-lg-8 col-lg-offset-2">
+        <a href="img/methods.png" data-lightbox="sws-img-land-rates"><img src="img/methods.png" alt="widgets" class="img-responsive pull-right"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1 features-text">
+        <h2>Longest Requests</h2>
+        <i class="fa fa-hourglass-end big-icon pull-right"></i>
+        <p>Longest 100 Requests. Request and Response details on top 100 requests that took longest time to process - method, URLs, parameters, request and response headers, addresses, start/stop times and processing duration, matched API Operation info</p>
+      </div>
+      <div class="col-lg-5 features-text">
+        <h2>Auto Refresh</h2>
+        <i class="fa fa-refresh big-icon pull-right"></i>
+        <p>Observe your API stats in real time - auto-refresh reloads stats and updates current view. Adjust frequency to 1sec, 10sec, 30 sec or 1 min, pause / resume</p>
+      </div>
+    </div>
+    <div class="row margin30">
+      <div class="col-lg-8 col-lg-offset-2">
+        <a href="img/timeline.png" data-lightbox="sws-img-land-rates"><img src="img/timeline.png" alt="widgets" class="img-responsive pull-right"></a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="sws-landing-api">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <p class="separator-dots"></p>
+          </div>
+      </div>
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>Get stats with API</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+{% highlight shell %}$ curl http://<your app host:port>/swagger-stats/stats{% endhighlight %}
+{% highlight json %}
+{
+  "startts": 1495174617959,
+  "all": {
+    "requests": 247,
+    "responses": 246,
+    "errors": 89,
+    "info": 0,
+    "success": 139,
+    "redirect": 18,
+    "client_error": 68,
+    "server_error": 21,
+    "total_time": 12601,
+    "max_time": 100,
+    "avg_time": 51.016194331983804,
+    "total_req_clength": 12760,
+    "max_req_clength": 209,
+    "avg_req_clength": 51,
+    "total_res_clength": 25361,
+    "max_res_clength": 200,
+    "avg_res_clength": 102,
+    "req_rate": 1.8788726763941634,
+    "err_rate": 0.6715970417749351
+  },
+  "name": "swagger-stats-testapp",
+  "version": "1.0.0",
+  "nodehostname": "hostname",
+  "nodename": "node-1",
+  "nodeaddress": "127.0.0.1"
+}{% endhighlight %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p class="separator-dots"></p>
+      </div>
+    </div>
+    <div class="row m-b-lg">
+      <div class="col-lg-12 text-center">
+        <h1>Open Source</h1>
+        <h3><a href="https://github.com/slanatech/swagger-stats">https://github.com/slanatech/swagger-stats</a></h3>
+        <p class="sws-highlight">swagger-stats is free and open source, under <a href="https://raw.githubusercontent.com/slanatech/swagger-stats/master/LICENSE">MIT license</a></p>
+      </div>
+    </div>
+
+    <div class="row m-b-lg">
+      <div class="col-lg-12 text-center">
+        <a href="https://github.com/slanatech/swagger-stats" class="btn btn-primary btn-contribute"><i class="fa fa-chevron-circle-right"></i>&nbsp;Contribute</a>
+      </div>
+    </div>
+
+    <div class="row m-b-lg">
+      <div class="col-lg-12 text-center">
+        <p class="separator-empty"></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p class="separator-dots"></p>
+      </div>
+    </div>
+    <div class="row m-b-lg">
+      <div class="col-lg-12 text-center">
+        <h1>Contact Us</h1>
+        <p class="sws-highlight">If you find a bug, or have an enhancement in mind please post <a href="https://github.com/slanatech/swagger-stats/issues">issues</a> on GitHub.</p>
+        <p><a href="mailto:sv2@slana.tech" class="btn btn-info btn-mailto"><i class="fa fa-envelope"></i>&nbsp;sv2@slana.tech</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p><strong>&copy; 2017 slana.tech</strong></p>
+        <br/><br/><br/>
+      </div>
+    </div>
+  </div>
+</section>

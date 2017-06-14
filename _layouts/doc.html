@@ -1,0 +1,80 @@
+---
+layout: default
+nocontainer: true
+extracontentclass: page-content-doc
+---
+<div class="row operations-row no-gutters">
+
+    <div class="col-md-2 hidden-print hidden-sm hidden-xs">
+
+        <nav class="sws-docs-sidebar hidden-print hidden-sm hidden-xs">
+            <div class="fixed sws-docs-sidebar-div">
+                <ul class="nav nav-stacked fixed" id="sidebar" data-spy="affix">
+
+                    {% for item in site.data.docmap %}
+                    <li>
+                        <a href="#{{ item.id }}">{{ item.title }}</a>
+                        {% if item.subitems %}
+                        <ul class="nav nav-stacked">
+                            {% for entry in item.subitems %}
+                            <li><a href="#{{ entry.id }}">{{ entry.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="col-md-10">
+
+
+        <!--Documentation Entries -->
+
+        {% for item in site.data.docmap %}
+
+        {% assign docentry = site.documentation | where:"id", item.content | first %}
+        {% if docentry %}
+
+        <div class="sws-docs-entry">
+            <div id="{{item.id}}" class="sws-docs-entry-content">
+                {{ docentry.content }}
+            </div>
+            {% assign sampleentry = site.documentation | where:"id", item.sample | first %}
+            <div class="sws-docs-entry-samples">
+                {% if sampleentry %}
+                {{ sampleentry.content }}
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+
+        {% for subitem in item.subitems %}
+        {% assign subentry = site.documentation | where:"id", subitem.content | first %}
+
+        {% if subentry %}
+        <div class="sws-docs-entry">
+            <div id="{{subitem.id}}" class="sws-docs-entry-content">
+                {{ subentry.content }}
+            </div>
+
+            {% assign subsample = site.documentation | where:"id", subitem.sample | first %}
+            <div class="sws-docs-entry-samples">
+                {% if subsample %}
+                {{ subsample.content }}
+                {% endif %}
+            </div>
+        </div>
+
+        {% endif %}
+
+        {% endfor %}
+        {% endfor %}
+
+    </div>
+</div>

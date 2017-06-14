@@ -1,0 +1,27 @@
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+
+<script>
+    $( document ).ready(function() {
+        console.log( "ready!" );
+
+        $('body').scrollspy({
+            target: '.sws-docs-sidebar-div',
+            offset: 200
+        });
+
+        // highlight right menu if we have meta
+        var swsnav = $('meta[name=swsnav]').attr("content");
+        if(swsnav) {
+            $('.sws-nav-li').each(function(){
+                if(this.id===swsnav) {
+                    $(this).addClass('active');
+                }else{
+                    $(this).removeClass('active');
+                }
+            });
+        }
+
+    });
+</script>

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Updates: show _posts which are about updates</h1>
+  
+  {{ content }}
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h1 class="page-heading">DOC</h1>
+
+  <ul class="post-list">
+    {% for doc in site.documentation %}
+    <li>
+
+      <span>Title:</span><span>{{ doc.title | escape }}</span>
+
+    </li>
+    {% endfor %}
+  </ul>
+
+</div>
