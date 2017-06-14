@@ -1,9 +1,9 @@
 title: swaggerstats.io
 email: sv2@slana.tech
 description: > # this means to ignore newlines until "baseurl:"
-  swagger-stats module collects and monitors REST API statistics in node express app using Swagger API specification or express routes
-baseurl: "/pages-test" # the subpath of your site, e.g. /blog
-url: "https://sv2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+  Insights into your APIs. Monitor REST API performance, health and usage statistics in node express apps with swagger-stats.
+baseurl: "/swaggerstats.io" # the subpath of your site, e.g. /blog
+url: "https://slanatech.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  sv2
 
 # Build settings
