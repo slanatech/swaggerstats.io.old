@@ -6,6 +6,8 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://swaggerstats.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  sv2
 
+google_analytics: true
+
 # Build settings
 markdown: kramdown
 
