@@ -1,7 +1,12 @@
 title: swaggerstats.io
 email: sv2@slana.tech
-description: > # this means to ignore newlines until "baseurl:"
-  Insights into your APIs. Monitor REST API performance, health and usage statistics in node express apps with swagger-stats.
+author: slana.tech
+logo: /img/logo-sm.png
+description: >
+  Insights into your APIs: monitor REST API performance, health and usage statistics in node express apps. swagger-stats monitors REST API requests and responses in node express apps and collects statistics.
+  swagger-stats detects and monitors statistics for API operations based on express routes or Swagger specification. You may retrieve statistics using swagger-stats API, as well as you may monitor
+  statistics using built-in UI front end. With data collected by swagger-stats you may spot problematic API endpoints, see where most of errors happens, catch long-running requests,
+  analyze details of last errors, observe trends in requests volumes.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://swaggerstats.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  sv2
@@ -16,6 +21,7 @@ highlighter: rouge
 gems:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
