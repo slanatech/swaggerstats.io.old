@@ -2,7 +2,7 @@ title: swaggerstats.io
 email: sv2@slana.tech
 description: > # this means to ignore newlines until "baseurl:"
   Insights into your APIs. Monitor REST API performance, health and usage statistics in node express apps with swagger-stats.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://swaggerstats.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  sv2
 
