@@ -710,6 +710,9 @@ code, pre {
 .sws-docs-entry-samples .highlight .vi { color: #40ffff } /* Name.Variable.Instance */
 .sws-docs-entry-samples .highlight .il { color: #3677a9 } /* Literal.Number.Integer.Long */
 
+/* API Doc fixes */
+.sws-api-doc pre, .sws-api-doc code { color: white; border: none;}
+
 /* Landing */
 body.sws-landing{
     color: #676a6c;
@@ -801,6 +804,13 @@ body.sws-landing{
 }
 .sws-landing .btn-contribute i {
     font-size: 30px;
+}
+
+.sws-landing .btn-apidoc  {
+    font-size: 20px;
+}
+.sws-landing .btn-apidoc i {
+    font-size: 22px;
 }
 
 .sws-landing .btn-mailto  {
