@@ -12,7 +12,7 @@ info:
   license:
     name: MIT
     url: 'http://opensource.org/licenses/MIT'
-basePath: /
+basePath: /yourapp
 schemes:
   - http
 consumes:
