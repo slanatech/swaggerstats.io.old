@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  version: 0.80.3
+  version: 0.80.4
   title: swagger-stats API
   description: |
     ### Telemetry for your APIs
@@ -12,7 +12,7 @@ info:
   license:
     name: MIT
     url: 'http://opensource.org/licenses/MIT'
-basePath: /yourapp
+basePath: /
 schemes:
   - http
 consumes:
