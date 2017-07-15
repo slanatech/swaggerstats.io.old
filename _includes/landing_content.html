@@ -60,6 +60,8 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
   </div>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 text-center">
+      <a href="https://www.npmjs.com/package/swagger-stats"><img src="https://img.shields.io/npm/v/swagger-stats.svg" alt="npm version"></a>
+      <!-- <a href="https://www.npmjs.com/package/swagger-stats"><img src="https://img.shields.io/npm/dt/swagger-stats.svg" alt="npm downloads"></a> -->
       <!--<a href="" class="btn btn-primary">Learn more</a>-->
     </div>
   </div>
@@ -101,12 +103,12 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
     <div class="row">
       <div class="col-lg-5 col-lg-offset-1 features-text">
         <h2>Summary</h2>
-        <i class="fa fa-line-chart big-icon pull-right"></i>
+        <i class="fa fa-line-chart big-icon pull-left"></i>
         <p>At a glance Summary view gives you key metrics on requests, errors, rates, and handling time. Timeline shows volumes of requests and responses by class per minute over last 60 minutes so you can quickly spot trends</p>
       </div>
       <div class="col-lg-5 features-text">
         <h2>Rates & Durations</h2>
-        <i class="fa fa-clock-o big-icon pull-right"></i>
+        <i class="fa fa-clock-o big-icon pull-left"></i>
         <p>Requests and Errors rates, Maximum, Average and Total Handle Time. Current values are calculated for the last minute, and Overall values - for entire run time. Trend of requests and errors rates per minute over last 60 minutes</p>
       </div>
     </div>
@@ -118,12 +120,12 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
     <div class="row">
       <div class="col-lg-5 col-lg-offset-1 features-text">
         <h2>Requests</h2>
-        <i class="fa fa-exchange big-icon pull-right"></i>
+        <i class="fa fa-exchange big-icon pull-left"></i>
         <p>Stats by Request Method. See request and error volumes, rates, errors by class, handle time and payload sizes per GET, POST, PUT, DELETE ... </p>
       </div>
       <div class="col-lg-5 features-text">
         <h2>Payload</h2>
-        <i class="fa fa-file-text big-icon pull-right"></i>
+        <i class="fa fa-file-text big-icon pull-left"></i>
         <p>Stats and Trends of API requests payload (content length) received in requests and sent in responses</p>
       </div>
     </div>
@@ -135,12 +137,12 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
     <div class="row">
       <div class="col-lg-5 col-lg-offset-1 features-text">
         <h2>API Calls</h2>
-        <i class="fa fa-code big-icon pull-right"></i>
+        <i class="fa fa-code big-icon pull-left"></i>
         <p>API Operation statistics. For each Path and Method shows metrics on requests and errors volumes, rates, handle time, payload. Shows API Operation from Swagger spec, including description and tags, so you can quickly find specific operation. API Operations based on express routes will be added to the list on the fly as they are invoked.</p>
       </div>
       <div class="col-lg-5 features-text">
         <h2>Errors</h2>
-        <i class="fa fa-exclamation-circle big-icon pull-right"></i>
+        <i class="fa fa-exclamation-circle big-icon pull-left"></i>
         <p>Counts of Errors responses by status code. "404 Not Found" path counts: see what path was requested and not found most of the times. "500 Internal Server Error" path counts: see what path produced most Internal Server errors</p>
       </div>
     </div>
@@ -152,12 +154,12 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
     <div class="row">
       <div class="col-lg-5 col-lg-offset-1 features-text">
         <h2>API Operation</h2>
-        <i class="fa fa-asterisk big-icon pull-right"></i>
+        <i class="fa fa-asterisk big-icon pull-left"></i>
         <p>Details about individual API operations. Key metrics summary, list of parameters from Swagger spec and stas of parameters usage: number of time parameter was passed, number of time mandatory parameter was missing</p>
       </div>
       <div class="col-lg-5 features-text">
         <h2>Last Errors</h2>
-        <i class="fa fa-exclamation big-icon pull-right"></i>
+        <i class="fa fa-exclamation big-icon pull-left"></i>
         <p>Last 100 Errors. Request and Response details on last 100 time error response was sent - method, URLs, parameters, request and response headers, addresses, start/stop times and processing duration, matched API Operation info</p>
       </div>
     </div>
@@ -169,12 +171,12 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
     <div class="row">
       <div class="col-lg-5 col-lg-offset-1 features-text">
         <h2>Longest Requests</h2>
-        <i class="fa fa-hourglass-end big-icon pull-right"></i>
+        <i class="fa fa-hourglass-end big-icon pull-left"></i>
         <p>Longest 100 Requests. Request and Response details on top 100 requests that took longest time to process - method, URLs, parameters, request and response headers, addresses, start/stop times and processing duration, matched API Operation info</p>
       </div>
       <div class="col-lg-5 features-text">
         <h2>Auto Refresh</h2>
-        <i class="fa fa-refresh big-icon pull-right"></i>
+        <i class="fa fa-refresh big-icon pull-left"></i>
         <p>Observe your API stats in real time - auto-refresh reloads stats and updates current view. Adjust frequency to 1sec, 10sec, 30 sec or 1 min, pause / resume</p>
       </div>
     </div>
