@@ -1,18 +1,24 @@
 - id: intro
-  title: Introduction
-  content: /documentation/intro
-  sample: /documentation/intro_sample
-  subitems:
-    - id: todo
-      title: TODO
-      content: /documentation/todo
-    - id: init
-      title: Initialize
-      content: /documentation/init
-      sample: /documentation/init_sample
+  title: Quick Start
+  content: /documentation/quickstart
+  sample: /documentation/quickstart-sample
 - id: api
   title: API
   content: /documentation/api
+  sample: /documentation/api-sample
+  subitems:
+    - id: stats
+      title: Statistics Object
+      content: /documentation/stats
+    - id: baselinestats
+      title: Baseline Statistics Object
+      content: /documentation/baselinestats
+    - id: sysstats
+      title: System Statistics Object
+      content: /documentation/sysstats
 - id: ui
   title: UI
   content: /documentation/ui
+- id: todo
+  title: TODO
+  content: /documentation/todo

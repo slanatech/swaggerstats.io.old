@@ -825,3 +825,37 @@ body.sws-landing{
 .sws-landing .btn-mailto i {
     font-size: 24px;
 }
+
+/* DOCUMENTATION TABLES */
+.page-content-doc table > thead > tr > th,
+.page-content-doc table > tbody > tr > th,
+.page-content-doc table > tfoot > tr > th,
+.page-content-doc table > thead > tr > td,
+.page-content-doc table > tbody > tr > td,
+.page-content-doc table > tfoot > tr > td {
+    padding: 5px;
+}
+.page-content-doc table {
+    border: 1px solid #ddd;
+}
+.page-content-doc table > thead > tr > th,
+.page-content-doc table > tbody > tr > th,
+.page-content-doc table > tfoot > tr > th,
+.page-content-doc table > thead > tr > td,
+.page-content-doc table > tbody > tr > td,
+.page-content-doc table > tfoot > tr > td {
+    border: 1px solid #ddd;
+}
+.page-content-doc table > thead > tr > th,
+.page-content-doc table > thead > tr > td {
+    border-bottom-width: 2px;
+}
+.page-content-doc table > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+blockquote {
+    font-size: 17.5px;
+    border-left: 5px solid #9ac526;
+    display: block;
+}

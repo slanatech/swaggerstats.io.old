@@ -5,6 +5,8 @@ categories: doc ui
 
 # User Interface
 
-swagger-stats User Interface: 
+## swagger-stats comes with built-in User Interface
 
-![image-title-here](img/sws2.png){:class="img-responsive"}
+> navigate to `http://<your app host:port>/swagger-stats/ui` in browser: 
+
+![image-title-here](img/uiscreens.gif){:class="img-responsive"}

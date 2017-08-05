@@ -5,7 +5,7 @@ categories: doc sample
 
 {% include logo.html %}
 
-# Introduction Example 
+## Introduction Example 
 
 ```javascript
 var swStats = require('swagger-stats');    
