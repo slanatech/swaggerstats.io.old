@@ -10,15 +10,25 @@
       <div>
         <img src="img/swaggerLogo360.png" alt="swagger" class="sws-swagger-logo">
         <h2>Swagger</h2>
-        <p class="sws-highlight">Monitor API requests and responses and collects statistics. With <a href="http://swagger.io" target="_blank">Swagger specification</a> provided, monitor API Operations defined in the spec</p>
+        <p class="sws-highlight">Trace API requests and responses and collects statistics. With <a href="http://swagger.io" target="_blank">Swagger specification</a> provided, monitor API Operations defined in the spec</p>
       </div>
       <div>
         <i class="fa fa-gear"></i>
         <h2>Express</h2>
         <p class="sws-highlight">Monitor API Operations detected on the fly based on Node.js Express routes</p>
       </div>
+      <div>
+        <img src="img/prometheus-logo-square.png" style="width:100px;height:100px;" alt="prometheus" class="sws-swagger-logo">
+        <h2>Prometheus</h2>
+        <p class="sws-highlight">swagger-stats exposes metrics in <a href="https://prometheus.io" target="_blank">Prometheus</a> format, so you may use <a href="https://prometheus.io" target="_blank">Prometheus</a>
+          and <a href="https://grafana.com" target="_blank">Grafana</a> for API monitoring and alerting</p>
+      </div>
     </div>
     <div class="col-md-6 text-center  wow zoomIn">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <div class="sws-logo sws-logo-landing">{<i class="fa fa-signal"></i>}</div>
       <div class="sws-logo-text">swagger-stats</div>
     </div>
@@ -31,7 +41,12 @@
       <div>
         <i class="fa fa-desktop"></i>
         <h2>UI</h2>
-        <p class="sws-highlight">Comes with built-in User Interface. Open /swagger-stats/ui to start monitoring right away</p>
+        <p class="sws-highlight">Comes with Built-In Telemetry User Interface. Open /swagger-stats/ui to start monitoring right away, without any infrastructure requirements</p>
+      </div>
+      <div>
+        <img src="img/grafana.png" style="width:100px;height:100px;" alt="prometheus" class="sws-swagger-logo">
+        <h2>Grafana</h2>
+        <p class="sws-highlight">Build Dashboards in <a href="https://grafana.com" target="_blank">Grafana</a> based on swagger-stats Prometheus metrics</p>
       </div>
     </div>
   </div>
@@ -66,7 +81,25 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
     </div>
   </div>
 
-<!--
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <p class="separator-dots"></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1>Monitor APIs with Prometheus and Grafana</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <a href="img/prometheus-dashboard.png" data-lightbox="sws-img-land-prometheusdashboard"><img src="img/prometheus-dashboard.png" alt="widgets" class="img-responsive pull-right"></a>
+    </div>
+  </div>
+
+
+
+  <!--
   <div class="row features-block">
     <div class="col-lg-6 features-text wow fadeInLeft">
       <h2>Install</h2>
@@ -97,7 +130,7 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
       </div>
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1>Monitor</h1>
+        <h1>Monitor with Built-In Telemetry UI</h1>
       </div>
     </div>
     <div class="row">

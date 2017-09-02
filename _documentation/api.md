@@ -5,7 +5,7 @@ categories: doc api
 
 # API
 
-swagger-stats exposes all statistics via single API operation:
+swagger-stats exposes all statistics via `/swagger-stats/stats` API operation:
 
 > **GET /swagger-stats/stats** 
    

@@ -16,8 +16,12 @@
     - id: sysstats
       title: System Statistics Object
       content: /documentation/sysstats
+- id: prometheus
+  title: Prometheus
+  content: /documentation/prometheus
+  sample: /documentation/prometheus-sample
 - id: ui
-  title: UI
+  title: Built-In Telemetry
   content: /documentation/ui
 - id: todo
   title: TODO
