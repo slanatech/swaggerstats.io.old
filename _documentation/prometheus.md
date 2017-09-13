@@ -31,11 +31,16 @@ The following metrics are provided:
 |`api_request_size_bytes`|histogram|method<br/>path<br/>le|API requests size|
 |`api_response_size_bytes`|histogram|method<br/>path<br/>le|API response size|
 
+<br/>
+<br/>
+
 
 ## Grafana Dashboards
 
 > **swagger-stats** Grafana Dashboards are published at [https://grafana.com/dashboards?search=swagger-stats](https://grafana.com/dashboards?search=swagger-stats)
 
+<br/>
+<br/>
 
 ## Getting Prometheus Metrics 
 
@@ -71,6 +76,9 @@ api_request_duration_milliseconds_sum{method="GET",path="/v2/pet/{petId}"} 12
 . . . . 
 
 ```
+
+<br/>
+<br/>
 
 ## Example Prometheus scrape configuration
 
