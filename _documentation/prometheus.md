@@ -13,23 +13,23 @@ swagger-stats exposes Prometheus metrics via `/swagger-stats/metrics`:
 
 The following metrics are provided:
 
-|Name           |Type     |Description
-|:--------------|:--------|:----------
-|`api_all_request_total`|counter|The total number of all API requests received|
-|`api_all_success_total`|counter|The total number of all API requests with success response|
-|`api_all_errors_total`|counter|The total number of all API requests with error response|
-|`api_all_client_error_total`|counter|The total number of all API requests with client error response|
-|`api_all_server_error_total`|counter|The total number of all API requests with server error response|
-|`api_all_request_in_processing_total`|gauge|The total number of all API requests currently in processing (no response yet)|
-|`nodejs_process_memory_rss_bytes`|gauge|Node.js process resident memory (RSS) bytes|
-|`nodejs_process_memory_heap_total_bytes`|gauge|Node.js process memory heapTotal bytes|
-|`nodejs_process_memory_heap_used_bytes`|gauge|Node.js process memory heapUsed bytes|
-|`nodejs_process_memory_external_bytes`|gauge|Node.js process memory external bytes|
-|`nodejs_process_cpu_usage_percentage`|gauge|Node.js process CPU usage percentage|
-|`api_request_total`|counter|The total number of all API requests|
-|`api_request_duration_milliseconds`|histogram|API requests duration|
-|`api_request_size_bytes`|histogram|API requests size|
-|`api_response_size_bytes`|histogram|API response size|
+|Name           |Type     |Labels |Description
+|:--------------|:--------|:----------|:----------
+|`api_all_request_total`|counter|-|The total number of all API requests received|
+|`api_all_success_total`|counter|-|The total number of all API requests with success response|
+|`api_all_errors_total`|counter|-|The total number of all API requests with error response|
+|`api_all_client_error_total`|counter|-|The total number of all API requests with client error response|
+|`api_all_server_error_total`|counter|-|The total number of all API requests with server error response|
+|`api_all_request_in_processing_total`|gauge|-|The total number of all API requests currently in processing (no response yet)|
+|`nodejs_process_memory_rss_bytes`|gauge|-|Node.js process resident memory (RSS) bytes|
+|`nodejs_process_memory_heap_total_bytes`|gauge|-|Node.js process memory heapTotal bytes|
+|`nodejs_process_memory_heap_used_bytes`|gauge|-|Node.js process memory heapUsed bytes|
+|`nodejs_process_memory_external_bytes`|gauge|-|Node.js process memory external bytes|
+|`nodejs_process_cpu_usage_percentage`|gauge|-|Node.js process CPU usage percentage|
+|`api_request_total`|counter|method<br/>path<br/>code|The total number of all API requests|
+|`api_request_duration_milliseconds`|histogram|method<br/>path<br/>le|API requests duration|
+|`api_request_size_bytes`|histogram|method<br/>path<br/>le|API requests size|
+|`api_response_size_bytes`|histogram|method<br/>path<br/>le|API response size|
 
 
 ## Grafana Dashboards

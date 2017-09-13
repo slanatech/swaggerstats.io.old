@@ -23,6 +23,3 @@
 - id: ui
   title: Built-In Telemetry
   content: /documentation/ui
-- id: todo
-  title: TODO
-  content: /documentation/todo
