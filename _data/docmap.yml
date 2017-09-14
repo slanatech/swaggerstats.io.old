@@ -23,3 +23,6 @@
 - id: ui
   title: Built-In Telemetry
   content: /documentation/ui
+- id: discuss
+  title: Discuss
+  content: /documentation/discuss-title

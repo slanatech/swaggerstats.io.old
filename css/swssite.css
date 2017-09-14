@@ -544,6 +544,10 @@ code, pre {
     background: white;
 }
 
+.sws-docs-discuss .sws-docs-entry-content {
+    padding: 0px 10px 0px 10px;
+}
+
 .sws-docs-entry-samples {
     color: #fafbfc;
     width: 40%;
