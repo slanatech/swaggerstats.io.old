@@ -863,3 +863,105 @@ blockquote {
     border-left: 5px solid #9ac526;
     display: block;
 }
+
+.sws-landing .header-back {
+    height: 470px;
+    width: 100%;
+}
+.sws-landing .header-back.one {
+    background: url('../img/landing/m2.jpg') 50% 0 no-repeat;
+}
+.sws-landing .header-back.two {
+    background: url('../img/landing/m3.jpg') 50% 0 no-repeat;
+}
+.sws-landing .carousel {
+    height: 470px;
+}
+.sws-landing .carousel-caption {
+    z-index: 10;
+}
+.sws-landing .carousel .item {
+    height: 470px;
+    background-color: #777;
+}
+.sws-landing .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 470px;
+}
+.sws-landing .carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+.sws-landing .carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.sws-landing .carousel-fade .carousel-inner .active.left,
+.sws-landing .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.sws-landing .carousel-fade .carousel-inner .next.left,
+.sws-landing .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.sws-landing .carousel-fade .carousel-control {
+    z-index: 2;
+}
+.sws-landing .carousel-control.left,
+.sws-landing .carousel-control.right {
+    background: none;
+}
+.sws-landing .carousel-control {
+    width: 6%;
+}
+.sws-landing .carousel-inner .container {
+    position: relative;
+    overflow: visible;
+}
+.sws-landing .carousel-inner {
+    overflow: visible;
+}
+.sws-landing .carousel-caption {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    text-align: left;
+}
+.sws-landing .carousel-caption {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    text-align: left;
+}
+.sws-landing .carousel-caption.blank {
+    top: 140px;
+}
+.sws-landing .carousel-image {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+.sws-landing .carousel-indicators {
+    padding-right: 60px;
+}
+.sws-landing .carousel-caption h1 {
+    font-weight: 700;
+    font-size: 38px;
+    text-transform: uppercase;
+    text-shadow: none;
+    letter-spacing: -1.5px;
+}
+.sws-landing .carousel-caption p {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: none;
+}
