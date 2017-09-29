@@ -2,6 +2,10 @@
   title: Quick Start
   content: /documentation/quickstart
   sample: /documentation/quickstart-sample
+- id: configuration
+  title: Configuration
+  content: /documentation/conf
+  sample: /documentation/conf-sample
 - id: api
   title: API
   content: /documentation/api

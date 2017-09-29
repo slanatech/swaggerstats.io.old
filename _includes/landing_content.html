@@ -104,53 +104,6 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <p class="separator-dots"></p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h1>Install & Enable</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-{% highlight shell %}npm install swagger-stats --save{% endhighlight %}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-{% highlight javascript %}var swStats = require('swagger-stats');
-var apiSpec = require('swagger.json');
-app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 text-center">
-      <a href="https://badge.fury.io/js/swagger-stats"><img src="https://badge.fury.io/js/swagger-stats.svg" alt="npm version"></a>
-      <!-- <a href="https://www.npmjs.com/package/swagger-stats"><img src="https://img.shields.io/npm/dt/swagger-stats.svg" alt="npm downloads"></a> -->
-      <!--<a href="" class="btn btn-primary">Learn more</a>-->
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <p class="separator-dots"></p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h1>Monitor APIs with Prometheus and Grafana</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-      <a href="img/prometheus-dashboard.png" data-lightbox="sws-img-land-prometheusdashboard"><img src="img/prometheus-dashboard.png" alt="widgets" class="img-responsive pull-right"></a>
-    </div>
-  </div>
-
-
 
   <!--
   <div class="row features-block">
@@ -171,6 +124,59 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
   </div>
 -->
 
+</section>
+
+<section class="sws-install-section">
+
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <p class="separator-dots"></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1>Install & Enable</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      {% highlight shell %}npm install swagger-stats --save{% endhighlight %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      {% highlight javascript %}var swStats = require('swagger-stats');
+      var apiSpec = require('swagger.json');
+      app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <a href="https://badge.fury.io/js/swagger-stats"><img src="https://badge.fury.io/js/swagger-stats.svg" alt="npm version"></a>
+      <!-- <a href="https://www.npmjs.com/package/swagger-stats"><img src="https://img.shields.io/npm/dt/swagger-stats.svg" alt="npm downloads"></a> -->
+      <!--<a href="" class="btn btn-primary">Learn more</a>-->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <p class="separator-dots"></p>
+    </div>
+  </div>
+
+</section>
+
+<section class="sws-prometheus-section">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1>Monitor APIs with Prometheus and Grafana</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <a href="img/prometheus-dashboard.png" data-lightbox="sws-img-land-prometheusdashboard"><img src="img/prometheus-dashboard.png" alt="widgets" class="img-responsive pull-right"></a>
+    </div>
+  </div>
 </section>
 
 
