@@ -24,6 +24,10 @@
   title: Prometheus
   content: /documentation/prometheus
   sample: /documentation/prometheus-sample
+  subitems:
+    - id: Queries
+      title: Prometheus Queries
+      content: /documentation/prometheus-queries
 - id: ui
   title: Built-In Telemetry
   content: /documentation/ui
