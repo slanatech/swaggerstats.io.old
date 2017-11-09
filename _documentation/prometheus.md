@@ -50,29 +50,47 @@ $ curl http://<your app host:port>/swagger-stats/metrics
 ```
 # HELP api_all_request_total The total number of all API requests received
 # TYPE api_all_request_total counter
-api_all_request_total 80
+api_all_request_total 302
+
+# HELP api_all_success_total The total number of all API requests with success response
+# TYPE api_all_success_total counter
+api_all_success_total 267
+
+# HELP api_all_errors_total The total number of all API requests with error response
+# TYPE api_all_errors_total counter
+api_all_errors_total 35
+
 . . . .
+
 # HELP api_request_total The total number of all API requests
 # TYPE api_request_total counter
-api_request_total{method="GET",path="/v2/pet/{petId}",code="200"} 1
-api_request_total{method="GET",path="/v2/pet/{petId}",code="302"} 1
+api_request_total{method="GET",path="/v2/pet/findByStatus",code="200"} 13
+api_request_total{method="GET",path="/v2/store/order/{orderId}",code="200"} 16
+api_request_total{method="GET",path="/v2/store/inventory",code="200"} 16
+api_request_total{method="GET",path="/v2/user/{username}",code="200"} 18
+api_request_total{method="POST",path="/v2/pet/{petId}",code="404"} 1
+api_request_total{method="POST",path="/v2/pet/{petId}/uploadImage",code="200"} 18
+api_request_total{method="POST",path="/v2/pet",code="200"} 16
+api_request_total{method="PUT",path="/v2/user/{username}",code="200"} 12
+api_request_total{method="GET",path="/v2/pet/findByTags",code="200"} 15
+
 . . . .
 # HELP api_request_duration_milliseconds API requests duration
 # TYPE api_request_duration_milliseconds histogram
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="5"} 3
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="10"} 3
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="25"} 4
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="50"} 4
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="100"} 4
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="250"} 4
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="500"} 4
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="1000"} 4
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="2500"} 4
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="5000"} 4
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="10000"} 4
-api_request_duration_milliseconds_bucket{method="GET",path="/v2/pet/{petId}",le="+Inf"} 4
-api_request_duration_milliseconds_count{method="GET",path="/v2/pet/{petId}"} 4
-api_request_duration_milliseconds_sum{method="GET",path="/v2/pet/{petId}"} 12
+api_request_duration_milliseconds_bucket{le="5",method="GET",path="/v2/store/order/{orderId}",code="200"} 1
+api_request_duration_milliseconds_bucket{le="10",method="GET",path="/v2/store/order/{orderId}",code="200"} 1
+api_request_duration_milliseconds_bucket{le="25",method="GET",path="/v2/store/order/{orderId}",code="200"} 3
+api_request_duration_milliseconds_bucket{le="50",method="GET",path="/v2/store/order/{orderId}",code="200"} 7
+api_request_duration_milliseconds_bucket{le="100",method="GET",path="/v2/store/order/{orderId}",code="200"} 16
+api_request_duration_milliseconds_bucket{le="250",method="GET",path="/v2/store/order/{orderId}",code="200"} 16
+api_request_duration_milliseconds_bucket{le="500",method="GET",path="/v2/store/order/{orderId}",code="200"} 16
+api_request_duration_milliseconds_bucket{le="1000",method="GET",path="/v2/store/order/{orderId}",code="200"} 16
+api_request_duration_milliseconds_bucket{le="2500",method="GET",path="/v2/store/order/{orderId}",code="200"} 16
+api_request_duration_milliseconds_bucket{le="5000",method="GET",path="/v2/store/order/{orderId}",code="200"} 16
+api_request_duration_milliseconds_bucket{le="10000",method="GET",path="/v2/store/order/{orderId}",code="200"} 16
+api_request_duration_milliseconds_bucket{le="+Inf",method="GET",path="/v2/store/order/{orderId}",code="200"} 16
+api_request_duration_milliseconds_sum{method="GET",path="/v2/store/order/{orderId}",code="200"} 911
+api_request_duration_milliseconds_count{method="GET",path="/v2/store/order/{orderId}",code="200"} 16
 . . . . 
 
 ```
