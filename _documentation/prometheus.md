@@ -27,9 +27,9 @@ The following metrics are provided:
 |`nodejs_process_memory_external_bytes`|gauge|-|Node.js process memory external bytes|
 |`nodejs_process_cpu_usage_percentage`|gauge|-|Node.js process CPU usage percentage|
 |`api_request_total`|counter|method<br/>path<br/>code|The total number of all API requests|
-|`api_request_duration_milliseconds`|histogram|method<br/>path<br/>le|API requests duration|
-|`api_request_size_bytes`|histogram|method<br/>path<br/>le|API requests size|
-|`api_response_size_bytes`|histogram|method<br/>path<br/>le|API response size|
+|`api_request_duration_milliseconds`|histogram|method<br/>path<br/>code<br/>le|API requests duration|
+|`api_request_size_bytes`|histogram|method<br/>path<br/>code<br/>le|API requests size|
+|`api_response_size_bytes`|histogram|method<br/>path<br/>code<br/>le|API response size|
 
 <br/>
 <br/>
