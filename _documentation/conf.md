@@ -30,8 +30,6 @@ Here is the list of supported options:
 |`onAuthenticate`|If authentication is enabled(`authentication=true`): Callback to authenticate request to `/swagger-stats/stats` and `/swagger-stats/metrics`<br/>Application must implement onAuthenticate to validate user credentials<br/>The following parameters are passed to this callback:<br/>`onAuthenticate(req,username,password)`<br/>- req - request<br/>- username - username<br/>- password - password<br/>Must return `true` if user authenticated, `false` if not|see sample|
 
 
-authentication
-
 <br/>
 <br/>
 
