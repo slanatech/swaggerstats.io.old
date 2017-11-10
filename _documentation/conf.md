@@ -23,6 +23,14 @@ Here is the list of supported options:
 |`durationBuckets`|Buckets for duration histogram metrics, in Milliseconds. Default:<br/>`[5, 10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000]`<br/>The default buckets are tailored to broadly measure API response time.Most likely needs to be defined per app to account for application specifics.|`[25, 100, 500, 5000, 10000]`|
 |`requestSizeBuckets`|Buckets for request size histogram metric, in Bytes. Default:<br/>`[5, 10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000]`<br/>The default buckets are tailored to broadly measure API request size.Most likely needs to be defined per app to account for application specifics.|`[500, 10000, 10000]`|
 |`responseSizeBuckets`|Buckets for response size histogram metric, in Bytes. Default:<br/>`[5, 10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000]`<br/>The default buckets are tailored to broadly measure API response size.Most likely needs to be defined per app to account for application specifics.|`[100, 200, 3000, 400,1000,10000]`|
+|`apdexThreshold`|Apdex Threshold, in milliseconds. Default: `25`. <br/>In Apdex calculation, request considered Satisfied if it is answered in less then this Threshold (< 25ms), and request is Tolerating  if it's answered in less then Threshold * 4 (<100 ms)<br/><br/>Make sure both Threshold(i.e.25) and Threshold*4(i.e. 100) are buckets in `durationBuckets`, so Apex calculation can be done using Prometheus metrics<br/><br/>See [Apdex calculation](https://en.wikipedia.org/wiki/Apdex)|`25`|
+|`onResponseFinish`|Callback to invoke when response is finished<br/>Application may implement it to trace Request Response Record (RRR), which is passed as parameter<br/>The following parameters are passed to this callback:<br/>`onResponseFinish(req,res,rrr)`<br/>- req - request<br/>- res - response<br/>- rrr - Request Response Record (RRR)|see sample|
+|`apdexThreshold`|Enable Basic authentication: `true` or `false`. Default `false`.|`true`|
+|`sessionMaxAge`|If authentication is enabled(`authentication=true`): Max Age of the session, in seconds. Default `900`|`100`|
+|`onAuthenticate`|If authentication is enabled(`authentication=true`): Callback to authenticate request to `/swagger-stats/stats` and `/swagger-stats/metrics`<br/>Application must implement onAuthenticate to validate user credentials<br/>The following parameters are passed to this callback:<br/>`onAuthenticate(req,username,password)`<br/>- req - request<br/>- username - username<br/>- password - password<br/>Must return `true` if user authenticated, `false` if not|see sample|
+
+
+authentication
 
 <br/>
 <br/>

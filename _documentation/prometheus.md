@@ -100,19 +100,32 @@ api_request_duration_milliseconds_count{method="GET",path="/v2/store/order/{orde
 
 ## Example Prometheus scrape configuration
 
-```
+<br/>
+
+### Simple scrape 
+
+```yaml
 scrape_configs:
-
-  - job_name: 'sws-testapp'
-    scrape_interval: '10s'
-    metrics_path: '/swagger-stats/metrics'
-    static_configs:
-      - targets: ['localhost:3030']
-
   - job_name: 'sws-spectest'
     scrape_interval: '10s'
     metrics_path: '/swagger-stats/metrics'
     static_configs:
       - targets: ['localhost:3040']
-
 ```
+
+<br/>
+
+### Scrape with basic authentication enabled 
+
+```yaml
+  - job_name: 'sws-authtest'
+    scrape_interval: '10s'
+    metrics_path: '/swagger-stats/metrics'
+    static_configs:
+      - targets: ['localhost:3050']
+    basic_auth:
+      username: 'swagger-stats'
+      password: 'swagger-stats'
+```  
+          
+
