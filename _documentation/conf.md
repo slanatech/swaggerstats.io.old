@@ -40,7 +40,7 @@ The simplest configuration for swagger-stats is no options at all. If you pass n
 In this case, without swagger specification, swagger-stats will detect API operations on the fly based on express routes (i.e. `/myapi/:param`),
 and it will calculate statistics for detected API operations.
 
-> If your existing app does not have swagger specification, you can still use swagger-stats to monitor API defined by Express routes 
+> If your existing app does not have swagger specification, swagger-stats will detect and monitor API defined by Express routes 
 
 ```javascript
 var express = require('express');
