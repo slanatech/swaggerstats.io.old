@@ -256,6 +256,7 @@ definitions:
       - version
       - hosname
       - ip
+      - apdexThreshold
     properties:
       startts:
         type: integer
@@ -273,6 +274,13 @@ definitions:
       ip:
         type: string
         description: IP address
+      apdexThreshold:
+        type: string
+        description: |
+          Current Apdex Threshold, in milliseconds. Default: `25`.
+          In Apdex calculation, request considered Satisfied if it is answered in less then this Threshold (< 25ms),
+          and request is Tolerating  if it's answered in less then Threshold * 4 (<100 ms)
+          See [Apdex calculation](https://en.wikipedia.org/wiki/Apdex)
       all:
         $ref: '#/definitions/baselinestats'
       sys:
