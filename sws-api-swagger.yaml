@@ -226,6 +226,18 @@ definitions:
       err_rate:
         type: number
         description: Error Rate
+      apdex_threshold:
+        type: number
+        description: Current Apdex threshold
+      apdex_satisfied:
+        type: number
+        description: Total number of "satisfied" requests: success and response time <= apdex_threshold
+      apdex_tolerated:
+        type: number
+        description: Total number of "tolerated" requests: success and response time <= apdex_threshold
+      apdex_score:
+        type: number
+        description: Apdex score: (apdex_satisfied + (apdex_tolerated/2))/responses
   sysstats:
     type: object
     description: System statistics - memory usage and CPU usage of node process. As returned by process.memoryUsage() and process.cpuUsage().
