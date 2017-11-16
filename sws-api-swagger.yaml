@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  version: 0.93.0
+  version: 0.94.1
   title: swagger-stats API
   description: |
     ### Telemetry for your APIs
@@ -82,9 +82,11 @@ paths:
           type: string
       responses:
         '200':
-          description: response
+          description: Statistcs
           schema:
             $ref: '#/definitions/stats'
+        '403':
+          description: Authentication required (if Authentication is enabled by configuration)
         default:
           description: unexpected error
   /swagger-stats/metrics:
@@ -144,6 +146,17 @@ paths:
               api_request_duration_milliseconds_count{method="GET",path="/v2/pet/{petId}"} 4
               api_request_duration_milliseconds_sum{method="GET",path="/v2/pet/{petId}"} 12
               . . . .
+        '403':
+          description: Authentication required (if Authentication is enabled by configuration)
+        default:
+          description: unexpected error
+  /swagger-stats/logout:
+    get:
+      description: Logout user (if Authentication is enabled by configuration)
+      operationId: /swagger-stats/logout
+      responses:
+        '200':
+          description: User logged out
         default:
           description: unexpected error
 definitions:
