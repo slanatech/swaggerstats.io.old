@@ -11,4 +11,4 @@ You can use it to start monitoring your app right away, without any additional i
 
 > navigate to `http://<your app host:port>/swagger-stats/ui` in browser: 
 
-![image-title-here](img/ui0940.gif){:class="img-responsive"}
+<a href="img/ui0950.gif" data-lightbox="sws-img-ui"><img src="img/ui0950.gif" alt="built-in telemetry" class="img-responsive pull-right"></a>
