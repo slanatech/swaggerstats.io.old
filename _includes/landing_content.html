@@ -131,47 +131,12 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
 
 </section>
 
-<section class="sws-install-section">
-
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <p class="separator-dots"></p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h1>Install & Enable</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-      {% highlight shell %}npm install swagger-stats --save{% endhighlight %}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-      {% highlight javascript %}var swStats = require('swagger-stats');
-var apiSpec = require('swagger.json');
-app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 text-center">
-      <a href="https://badge.fury.io/js/swagger-stats"><img src="https://badge.fury.io/js/swagger-stats.svg" alt="npm version"></a>
-      <!-- <a href="https://www.npmjs.com/package/swagger-stats"><img src="https://img.shields.io/npm/dt/swagger-stats.svg" alt="npm downloads"></a> -->
-      <!--<a href="" class="btn btn-primary">Learn more</a>-->
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <p class="separator-dots"></p>
-    </div>
-  </div>
-
-</section>
-
 <section class="sws-elastic-section">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <p class="separator-dots"></p>
+    </div>
+  </div>
   <div class="row">
     <div class="col-lg-12 text-center">
       <h1>API Analytics with Elasticsearch and Kibana</h1>
@@ -259,16 +224,16 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
         <p>API Operation statistics. For each Path and Method shows metrics on requests and errors volumes, rates, handle time, payload. Shows API Operation from Swagger spec, including description and tags, so you can quickly find specific operation. API Operations based on express routes will be added to the list on the fly as they are invoked.</p>
       </div>
       <div class="col-lg-4 features-text">
-        <h2>Errors</h2>
-        <i class="fa fa-exclamation-circle big-icon pull-left"></i>
-        <p>Counts of Errors responses by status code. "404 Not Found" path counts: see what path was requested and not found most of the times. "500 Internal Server Error" path counts: see what path produced most Internal Server errors</p>
+        <h2>API Operation</h2>
+        <i class="fa fa-asterisk big-icon pull-left"></i>
+        <p>Details about individual API operations. Key metrics summary, list of parameters from Swagger spec and stas of parameters usage: number of time parameter was passed, number of time mandatory parameter was missing</p>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-4 features-text">
-        <h2>API Operation</h2>
-        <i class="fa fa-asterisk big-icon pull-left"></i>
-        <p>Details about individual API operations. Key metrics summary, list of parameters from Swagger spec and stas of parameters usage: number of time parameter was passed, number of time mandatory parameter was missing</p>
+        <h2>Errors</h2>
+        <i class="fa fa-exclamation-circle big-icon pull-left"></i>
+        <p>Counts of Errors responses by status code. "404 Not Found" path counts: see what path was requested and not found most of the times. "500 Internal Server Error" path counts: see what path produced most Internal Server errors</p>
       </div>
       <div class="col-lg-4 features-text">
         <h2>Last Errors</h2>
@@ -282,7 +247,7 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6 col-lg-offset-2 features-text">
+      <div class="col-lg-4 col-lg-offset-4 features-text">
         <h2>Auto Refresh</h2>
         <i class="fa fa-refresh big-icon pull-left"></i>
         <p>Observe your API stats in real time - auto-refresh reloads stats and updates current view. Adjust frequency to 1sec, 10sec, 30 sec or 1 min, pause / resume</p>
@@ -291,6 +256,47 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
   </div>
 
 </section>
+
+<section class="sws-install-section">
+
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <p class="separator-dots"></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1>Install & Enable</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      {% highlight shell %}npm install swagger-stats --save{% endhighlight %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      {% highlight javascript %}var swStats = require('swagger-stats');
+      var apiSpec = require('swagger.json');
+      app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <a href="https://badge.fury.io/js/swagger-stats"><img src="https://badge.fury.io/js/swagger-stats.svg" alt="npm version"></a>
+      <!-- <a href="https://www.npmjs.com/package/swagger-stats"><img src="https://img.shields.io/npm/dt/swagger-stats.svg" alt="npm downloads"></a> -->
+      <!--<a href="" class="btn btn-primary">Learn more</a>-->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <p class="separator-dots"></p>
+    </div>
+  </div>
+
+</section>
+
 
 <section class="sws-landing-api">
   <div class="container">
