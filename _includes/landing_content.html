@@ -272,14 +272,14 @@ app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
   </div>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
-      {% highlight shell %}npm install swagger-stats --save{% endhighlight %}
+{% highlight shell %}npm install swagger-stats --save{% endhighlight %}
     </div>
   </div>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
-      {% highlight javascript %}var swStats = require('swagger-stats');
-      var apiSpec = require('swagger.json');
-      app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
+{% highlight javascript %}var swStats = require('swagger-stats');
+var apiSpec = require('swagger.json');
+app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
     </div>
   </div>
   <div class="row">
