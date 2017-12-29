@@ -50,8 +50,7 @@
 </div>
 
 
-
-<section class="container features">
+<section class="container title">
   <div class="row">
     <div class="col-lg-12 text-center">
       <p class="sws-title-main">API Telemetry and APM</p>
@@ -68,6 +67,11 @@
       <p class="separator-dots"></p>
     </div>
   </div>
+</section>
+
+
+<section class="container features-new">
+
   <div class="row">
     <div class="col-md-4 text-center wow fadeInLeft">
       <div>
@@ -75,14 +79,25 @@
         <h2>Swagger</h2>
         <p class="sws-highlight">Trace API requests and responses and collects statistics. With <a href="http://swagger.io" target="_blank">Swagger specification</a> provided, monitor API Operations defined in the spec</p>
       </div>
-      <br/>
-      <br/>
+    </div>
+    <div class="col-md-4 text-center wow fadeInLeft">
       <div>
-        <i class="fa fa-gear"></i>
+        <i class="fa fa-gear" style="color: #9ac526;"></i>
         <h2>Express</h2>
         <p class="sws-highlight">Monitor API Operations detected on the fly based on Node.js Express routes</p>
       </div>
-      <br/>
+    </div>
+    <div class="col-md-4 text-center wow fadeInLeft">
+      <div>
+        <i class="fa fa-code" style="color: #9ac526;"></i>
+        <h2>API</h2>
+        <p class="sws-highlight">Get statistics on requests and responses, errors, processing time, content length, rates - per method, per API Operation, over time </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 text-center wow fadeInLeft">
       <div>
         <img src="img/prometheus-logo-square.png" style="width:100px;height:100px;" alt="prometheus" class="sws-swagger-logo">
         <h2>Prometheus</h2>
@@ -90,67 +105,46 @@
           and <a href="https://grafana.com" target="_blank">Grafana</a> for API monitoring and alerting</p>
       </div>
     </div>
-    <div class="col-md-4 text-center wow zoomIn">
-      <div>
+    <div class="col-md-4 text-center wow fadeInLeft">
+      <div style="padding-top:40px;">
         <img src="img/swagger-stats-logo2-sm.png" style="width:269px;height:150px;" alt="swagger-stats" class="sws-swagger-logo">
       </div>
-      <br/>
-      <br/>
-      <div>
+    </div>
+    <div class="col-md-4 text-center wow fadeInLeft">
+      <div style="padding-top:20px;">
         <img src="img/icon-white-circle-elasticsearch.png" style="width:60px;height:60px;" alt="prometheus" class="sws-swagger-logo">
         <h2>Elasticsearch</h2>
         <p class="sws-highlight">swagger-stats stores API request/response details in <a href="https://elastic.co" target="_blank">Elasticsearch</a> so you may perform detailed analysis of API usage over time</p>
       </div>
-      <br/>
-      <br/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 text-center wow fadeInLeft">
+      <div>
+        <img src="img/grafana.png" style="width:80px;height:80px;" alt="prometheus" class="sws-swagger-logo">
+        <h2>Grafana</h2>
+        <p class="sws-highlight">Build Dashboards in <a href="https://grafana.com" target="_blank">Grafana</a> based on swagger-stats Prometheus metrics</p>
+      </div>
+    </div>
+    <div class="col-md-4 text-center wow fadeInLeft">
+      <div style="padding-top:10px;">
+        <i class="fa fa-line-chart" style="color: #9ac526;"></i>
+        <h2>Telemetry</h2>
+        <p class="sws-highlight">Comes with Built-In Telemetry User Interface. Open /swagger-stats/ui to start monitoring right away, without any infrastructure requirements</p>
+      </div>
+    </div>
+    <div class="col-md-4 text-center wow fadeInLeft">
       <div>
         <img src="img/icon-kibana-bb.png" style="width:60px;height:60px;" alt="prometheus" class="sws-swagger-logo">
         <h2>Kibana</h2>
         <p class="sws-highlight">Analyze API traffic in <a href="https://elastic.co" target="_blank">Kibana</a>, build Visualizations and Dashboards</p>
       </div>
     </div>
-    <div class="col-md-4 text-center wow fadeInRight">
-      <div>
-        <i class="fa fa-code"></i>
-        <h2>API</h2>
-        <p class="sws-highlight">Get statistics on requests and responses, errors, processing time, content length, rates - per method, per API Operation, over time </p>
-      </div>
-      <br/>
-      <br/>
-      <div>
-        <i class="fa fa-desktop"></i>
-        <h2>UI</h2>
-        <p class="sws-highlight">Comes with Built-In Telemetry User Interface. Open /swagger-stats/ui to start monitoring right away, without any infrastructure requirements</p>
-      </div>
-      <br/>
-      <div>
-        <img src="img/grafana.png" style="width:100px;height:100px;" alt="prometheus" class="sws-swagger-logo">
-        <h2>Grafana</h2>
-        <p class="sws-highlight">Build Dashboards in <a href="https://grafana.com" target="_blank">Grafana</a> based on swagger-stats Prometheus metrics</p>
-      </div>
-    </div>
   </div>
-
-  <!--
-  <div class="row features-block">
-    <div class="col-lg-6 features-text wow fadeInLeft">
-      <h2>Install</h2>
-{% highlight shell %}npm install swagger-stats --save{% endhighlight %}
-      <a href="" class="btn btn-primary">Learn more</a>
-    </div>
-    <div class="col-lg-6 text-right wow fadeInRight">
-      <h2>Enable</h2>
-      <div style="text-align: left">
-{% highlight javascript %}var swStats = require('swagger-stats');
-var apiSpec = require('swagger.json');
-app.use(swStats.getMiddleware({swaggerSpec:apiSpec}));{% endhighlight %}
-      </div>
-      <a href="" class="btn btn-primary">Learn more</a>
-    </div>
-  </div>
-  -->
 
 </section>
+
 
 <section class="sws-elastic-section">
   <div class="row">
