@@ -44,6 +44,7 @@ parser.validate(specLocation,function(err, api) {
       },
       authentication: true,
       sessionMaxAge: maxAge,
+      elasticsearch: 'http://127.0.0.1:9200',
       onAuthenticate: function(req,username,password){
         // simple check for username and password
         return((username==='swagger-stats') 
